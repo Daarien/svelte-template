@@ -5,6 +5,16 @@
   import About from "./pages/About.svelte";
 </script>
 
+<div class="root">
+  <Router>
+    <Route exact path="/" component="{Index}" />
+    <Route path="/about" component="{About}" />
+    <Route fallback>
+      <h1>404 Not Found</h1>
+    </Route>
+  </Router>
+</div>
+
 <style>
   .root {
     text-align: center;
@@ -26,13 +36,3 @@
     }
   }
 </style>
-
-<div class="root">
-  <Router>
-    <Route exact path="/" component={Index} />
-    <Route path="/about" component={About} />
-    <Route fallback>
-      <h1>404 Not Found</h1>
-    </Route>
-  </Router>
-</div>

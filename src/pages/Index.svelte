@@ -6,6 +6,18 @@
   }
 </script>
 
+<main>
+  <h1>Index page</h1>
+  <p>
+    Visit the
+    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
+    to learn how to build Svelte apps.
+  </p>
+  <p class="btn-container">
+    <button type="button" on:click="{handleBtnClick}">go to About</button>
+  </p>
+</main>
+
 <style type="text/scss">
   .btn-container {
     margin-top: 30px;
@@ -23,15 +35,3 @@
     }
   }
 </style>
-
-<main>
-  <h1>Index page</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
-  <p class="btn-container">
-    <button type="button" on:click={handleBtnClick}>go to About</button>
-  </p>
-</main>
